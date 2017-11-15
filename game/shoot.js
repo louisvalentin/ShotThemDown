@@ -65,6 +65,8 @@ function player_collision()
     var x2 = enemy1.graphic.position.x + WIDTH / 2;
     var y2 = enemy1.graphic.position.y + HEIGHT / 2;
 
+
+
     if ( x < 0 )
         player1.graphic.position.x -= x;
     if ( x > WIDTH )
@@ -76,12 +78,25 @@ function player_collision()
 
     if ( x2 < 0 )
         enemy1.graphic.position.x -= x;
-    if ( x2 > WIDTH )
+    
+
+    for (var i = 0; i < player1.bullets.length; i++)
     {
-        console.log("hereeee");
-        //enemy1.graphic.position.x = -200;
+        var bulletx = player1.bullets[i].position.x + WIDTH / 2;
+        var bullety = player1.bullets[i].position.y + HEIGHT / 2
+
+        if (bulletx < x2 + 10 && bulletx > x2 - 10 && bullety < y2 + 10 && bullety > y2 - 10)
+        {
+            console.log("die");
+            scene.remove(enemy1.graphic);
+        }
     }
-        //player1.graphic.position.x -= x - WIDTH;
+
+
+    
+
+    //if (enemy1.)
+
 
 }
 
