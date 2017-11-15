@@ -61,6 +61,10 @@ function player_collision()
     //collision between player and walls
     var x = player1.graphic.position.x + WIDTH / 2;
     var y = player1.graphic.position.y + HEIGHT / 2;
+
+    var x2 = enemy1.graphic.position.x + WIDTH / 2;
+    var y2 = enemy1.graphic.position.y + HEIGHT / 2;
+
     if ( x < 0 )
         player1.graphic.position.x -= x;
     if ( x > WIDTH )
@@ -69,6 +73,15 @@ function player_collision()
         player1.graphic.position.y -= y;
     if ( y > HEIGHT )
         player1.graphic.position.y -= y - HEIGHT;
+
+    if ( x2 < 0 )
+        enemy1.graphic.position.x -= x;
+    if ( x2 > WIDTH )
+    {
+        console.log("hereeee");
+        //enemy1.graphic.position.x = -200;
+    }
+        //player1.graphic.position.x -= x - WIDTH;
 
 }
 

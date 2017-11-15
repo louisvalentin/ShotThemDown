@@ -13,9 +13,8 @@ function update()
     if (keyboard.pressed("down"))
         player1.decelerate(moveDistance);
 
-    if (keyboard.pressed("z"))
-        ennemy1.decelerate(moveDistance);
-
+    
+    enemy1.move();
     player1.move();
     
     controls.update();
