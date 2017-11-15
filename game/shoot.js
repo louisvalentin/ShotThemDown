@@ -39,6 +39,7 @@ function collisions()
     player_falling();
 }
 
+
 function bullet_collision()
 {
     //collision between bullet and walls
