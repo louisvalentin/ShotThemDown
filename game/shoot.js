@@ -83,20 +83,18 @@ function player_collision()
     for (var i = 0; i < player1.bullets.length; i++)
     {
         var bulletx = player1.bullets[i].position.x + WIDTH / 2;
-        var bullety = player1.bullets[i].position.y + HEIGHT / 2
+        var bullety = player1.bullets[i].position.y + HEIGHT / 2;
 
         if (bulletx < x2 + 10 && bulletx > x2 - 10 && bullety < y2 + 10 && bullety > y2 - 10)
         {
-            console.log("die");
             scene.remove(enemy1.graphic);
         }
     }
 
-
-    
-
-    //if (enemy1.)
-
+    if (x - 14 < x2 + 10 && x + 14 > x2 - 10 && y < y2 - 14 + 10 && y + 14 > y2 - 10)
+    {
+        player1.life -= 1;
+    }
 
 }
 

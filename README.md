@@ -9,7 +9,7 @@ A video game with three.js
 - [X] : As a user, I want to see a little spaceship
 - [X] : As a user, I want to move this little spaceship
 - [X] : As a user, I want to a map with a tiles
-- [X] : As a user, I want to fall when I have no tile under me
+- [ ] : As a user, I want to fall when I have no tile under me
 - [X] : As a user, I want to restart the game, if I fall
 
 
@@ -22,5 +22,5 @@ A video game with three.js
 - [X] : As a user, I want to see ennemy
 - [X] : As a user, I want to destroy ennemy when I shot them
 - [X] : As a ennemy, I want to move on one axe
-- [ ] : As a user, I want to decrease my life when I am touch by an ennemy
+- [X] : As a user, I want to decrease my life when I am touch by an ennemy
 - [ ] : As a user, I want to decrease my life when I fall 
